@@ -18,8 +18,9 @@ export class AuthService {
         try {
             const userAccount = await this.account.create(ID.unique(), email, password, name);
             if (userAccount) {
-                // call another method
+                console.log("Appwrite serive :: createAccount :: userAccount", userAccount.password);
                 return this.login({email, password});
+                
             } else {
                return  userAccount;
             }
@@ -59,3 +60,4 @@ export class AuthService {
 const authService = new AuthService();
 
 export default authService
+
