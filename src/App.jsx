@@ -22,15 +22,13 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between'>
-      <div className='lg:w-full block'>
+      <div className='min-h-screen flex flex-col content-between '>
         <Header />
-        <main className='min-h-screen'>
+        <main className='min-h-screen bg-[#DEAA79]'>
          <Outlet />
         </main>
         <Footer />
       </div>
-    </div>
   ) : null
 }
 
