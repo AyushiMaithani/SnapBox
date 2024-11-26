@@ -28,7 +28,7 @@ function Login() {
 
   return (
     <div
-    className='flex items-center justify-center'
+    className='flex items-center justify-center text-black'
     >
         <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10 my-8`}>
         <div className="mb-2 flex justify-center">

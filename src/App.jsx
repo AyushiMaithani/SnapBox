@@ -22,14 +22,19 @@ function App() {
   }, [])
   
   return !loading ? (
-      <div className='min-h-screen flex flex-col content-between '>
+    <div className=" bg-black flex justify-center items-center p-5 ">
+      <div className="flex flex-col bg-black w-[80vw]">
         <Header />
-        <main className='min-h-screen bg-[#DEAA79]'>
+        <hr />
+        <main className='min-h-screen text-white '>
          <Outlet />
         </main>
         <Footer />
       </div>
+      </div>
   ) : null
+
+  
 }
 
 export default App

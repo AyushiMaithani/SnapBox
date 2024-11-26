@@ -4,21 +4,26 @@ import Logo from '../Logo'
 
 function Footer() {
   return (
-    <footer className=" bg-[#8683CC] ">
-                            <div className="mb-11 flex justify-around ">
+    <footer>
+                            <div className=" flex justify-between text-white ">
                                 <div className='flex flex-col'>
                                     <Logo width="100px" />
                                 <h1 className='text-[5rem] font-[550] font-serif leading-none tracking-tighter'>snapbox</h1>
                                 </div>
-                            <div className='mt-8'>
-          <h4 className='pb-14 text-white'> Socials</h4>
+                            <div className='mt-8 '>
+          <h4 className='pb-14'> Socials</h4>
           {["Instagram","Twitter(X?)","LinkedIn"].map((item,index)=> <div key={index}>{item}</div>)}</div>  
 
-          <div className='mt-8'>
-          <h4 className='pb-14 text-white'> Socials</h4>
+          <div className='mt-8 '>
+          <h4 className='pb-14'> Socials</h4>
           {["Instagram","Twitter(X?)","LinkedIn"].map((item,index)=> <div key={index}>{item}</div>)}</div>  
-          </div>
-            
+
+          <div  className='mt-8 w-[30%]'>
+            Snapshot is your digital time capsule, capturing life's most precious moments. Easily store, share, and relive your memories with friends and family in a stunning, user-friendly app
+            </div>
+          </div>   
+
+           
         </footer>
   )
 }
